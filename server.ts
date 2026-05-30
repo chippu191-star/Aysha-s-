@@ -42,11 +42,31 @@ app.post("/api/stylist", async (req, res) => {
 
     const fallbackStylingAdvice = `Welcome to Aysha's Boutique. As your private atelier, we recommend styling based on your choice: ${selectedCategory || "Elite customwear"}. For a height of ${height || "standard sizing"} and ${bodyShape || "premium contour"} frame, our signature drape silhouettes in ${colorPalette || "luxurious neutrals"} are optimized to yield a statuesque, flowing contour. We suggest high-waisted cinches and tailored bodice structures to promote elegant length and majestic movement.`;
 
+    const getFallbackProduct = (cat: string) => {
+      const c = (cat || "").toLowerCase();
+      if (c.includes("salwar") || c.includes("kurthi") || c.includes("ethnic")) {
+        return { id: "eth-1", name: "Zari-Embroidered Rosewood Festive Salwar Suit" };
+      } else if (c.includes("coord") || c.includes("co-ord")) {
+        return { id: "cas-3", name: "Gulhar Handloom Indigo Block-Print Co-ord Set" };
+      } else if (c.includes("top") || c.includes("crop")) {
+        return { id: "cas-5", name: "Zola Tiered Muslin Crop-Top & Skirt Set" };
+      } else if (c.includes("office") || c.includes("formal")) {
+        return { id: "west-1", name: "Sorrento Blazer & Tailored Office Wear Suit" };
+      } else if (c.includes("festive")) {
+        return { id: "form-2", name: "Classic High-Neck Festive Kurthis Gown" };
+      } else if (c.includes("casual")) {
+        return { id: "cas-4", name: "Aura Pastel Sage Linen Kurta-Set" };
+      }
+      return { id: "eth-1", name: "Zari-Embroidered Rosewood Festive Salwar Suit" };
+    };
+
+    const recommended = getFallbackProduct(selectedCategory);
+
     const fallbackResponse = {
       stylingAdvice: fallbackStylingAdvice,
       productRecommendation: {
-        productId: selectedCategory === "Ethnic" ? "eth-1" : selectedCategory === "Western" ? "west-1" : "form-1",
-        productName: selectedCategory === "Ethnic" ? "Zari-Embroidered Rosewood Anarkali" : "Sorrento Blazer Suit",
+        productId: recommended.id,
+        productName: recommended.name,
         reasoning: "Selected based on design proportions to optimize silhouette draping, shoulder structure, and effortless premium wear."
       },
       customTailoringRules: {

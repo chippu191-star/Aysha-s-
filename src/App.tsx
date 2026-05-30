@@ -216,12 +216,11 @@ export default function App() {
     <div className="min-h-screen bg-atelier-champagne flex flex-col justify-between selection:bg-gold-200">
       
       {/* ANNOUNCEMENT HEADER BANNER */}
-      <div className="bg-[#1A1A1A] text-[#F8F7F4] text-center py-3 px-4 border-b border-[#F8F7F4]/10 text-[9px] sm:text-[10px] uppercase tracking-[0.25em] font-medium flex flex-col md:flex-row justify-center items-center gap-1.5 md:gap-8 z-50">
-        <span className="flex items-center gap-1.5"><span className="text-[#8E8A7F]">✈</span> All India Home Delivery &amp; Worldwide Shipping</span>
-        <span className="hidden md:inline text-[#8E8A7F]">•</span>
-        <span className="flex items-center gap-1.5"><span className="text-[#8E8A7F]">✨</span> Easy Customisation in Direct WhatsApp Chat</span>
-        <span className="hidden md:inline text-[#8E8A7F]">•</span>
-        <span className="text-[#8E8A7F]">Get your perfect fits in our magical hand</span>
+      <div className="bg-[#1A1A1A] text-[#F8F7F4] text-center py-3.5 px-4 border-b border-[#F8F7F4]/10 text-[10px] sm:text-[11px] tracking-wide font-medium z-50">
+        <div className="max-w-5xl mx-auto leading-relaxed">
+          <span className="text-neutral-300 font-light">Finding the trendy outfits from Instagram and Pinterest to fill your bucket list fitchecks from nowadays&apos; trendy fashion world... </span>
+          <span className="text-[#8E8A7F] font-bold">All Kerala fastest dispatching services are provided by Aysha&apos;s Boutique to enjoy your dreamy day! ✨</span>
+        </div>
       </div>
 
       {/* BRAND HEADER BAR */}
@@ -331,7 +330,7 @@ export default function App() {
               <div>
                 <div className="inline-flex items-center gap-2 border border-[#1A1A1A]/15 px-3 py-1.5 rounded-full mb-6 bg-white/40">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#8E8A7F] animate-pulse"></span>
-                  <span className="text-[9px] uppercase tracking-[0.2em] text-[#1A1A1A] font-semibold font-grotesk">Owner Niyas & Designer Shifana</span>
+                  <span className="text-[9px] uppercase tracking-[0.2em] text-[#1A1A1A] font-semibold font-grotesk">Owner Niysnichu &amp; Designer Shifana</span>
                 </div>
 
                 <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display leading-[0.95] text-[#1A1A1A] tracking-tight mb-8">
@@ -340,12 +339,19 @@ export default function App() {
                 </h2>
 
                 <p className="text-xs sm:text-xs font-mono text-[#8E8A7F] tracking-[0.15em] mb-3 uppercase">
-                  Complete women&apos;s clothing designs in a one touch
+                  Complete women&apos;s clothing designs are in a one touch
                 </p>
 
-                <p className="max-w-xl text-neutral-600 text-sm leading-relaxed mb-10 antialiased font-light">
-                  Redefining elegance through a synthesis of heritage and modern design. At <strong>Aysha&apos;s Boutique</strong>, led by Owner <strong>Niyas .i</strong> and Designer <strong>Shifana</strong>, we merge elite fabrics with custom handloom embroidery. Discover gorgeous women&apos;s ethnic wears like <strong>salwar, kurthis, co-ord sets, tops, croptops, casual wears, office wears, and festive wears</strong>. Experience easy customisation in our direct WhatsApp chat and get your perfect fits in our magical hands.
+                <p className="max-w-xl text-neutral-600 text-sm leading-relaxed mb-6 antialiased font-light">
+                  Redefining elegance through a synthesis of heritage and modern design. At <strong>Aysha&apos;s Boutique</strong>, led by Owner <strong>Niysnichu</strong> and Designer <strong>Shifana</strong>, we merge elite fabrics with custom handloom embroidery. Discover gorgeous women&apos;s ethnic wears like <strong>salwar, kurthis, co-ord sets, tops, croptops, casual wears, office wears, and festive wears</strong>.
                 </p>
+
+                {/* TRENDS & DISPATCH highlight note */}
+                <div className="max-w-xl bg-white border-l-2 border-[#8E8A7F] p-4.5 rounded-r-lg mb-8 shadow-xs border-[#1A1A1A]/5">
+                  <p className="text-xs text-neutral-800 leading-relaxed italic">
+                    &ldquo;Finding the trendy outfits from Instagram and Pinterest to fill your bucket list fitchecks from nowadays&apos; trendy fashion world... All Kerala fastest dispatching services are provided by Aysha&apos;s Boutique to enjoy your dreamy day!&rdquo;
+                  </p>
+                </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mb-12">
                   <div 
@@ -578,7 +584,7 @@ export default function App() {
                     </div>
                     <div>
                       <div className="text-[9px] font-mono uppercase text-neutral-400">PATRON / OWNER</div>
-                      <div className="text-xs font-semibold text-neutral-800">Niyas .i</div>
+                      <div className="text-xs font-semibold text-neutral-800">Niysnichu</div>
                     </div>
                   </div>
 
@@ -676,14 +682,14 @@ export default function App() {
                     </div>
                   </div>
 
-                  {/* Niyas phone card */}
+                  {/* Niysnichu phone card */}
                   <div className="flex items-center justify-between p-3.5 bg-white rounded-lg border border-[#1A1A1A]/10">
                     <div className="flex items-center gap-3">
                       <div className="bg-[#F8F7F4] h-8 w-8 rounded-full flex items-center justify-center text-[#8E8A7F]">
                         <Phone className="h-4 w-4" />
                       </div>
                       <div>
-                        <div className="text-[9px] font-mono uppercase text-neutral-400">Owner Niyas .i Line</div>
+                        <div className="text-[9px] font-mono uppercase text-neutral-400">Owner Niysnichu Line</div>
                         <a href="tel:+919645537324" className="font-mono text-xs font-bold text-neutral-800 hover:underline">+91 96455 37324</a>
                       </div>
                     </div>
@@ -839,7 +845,7 @@ export default function App() {
                         style={{ minHeight: "44px" }}
                       >
                         <span className="h-2 w-2 rounded-full bg-amber-500"></span>
-                        Owner Niyas .i
+                        Owner Niysnichu
                       </button>
                     </div>
                     <span className="text-[10px] text-slate-400 select-none block mt-1.5">Chats will be directed directly to this professional profile standard WhatsApp line.</span>
@@ -1005,7 +1011,7 @@ export default function App() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 border-t border-neutral-850 pt-8 flex flex-col sm:flex-row justify-between items-center text-[10px] text-neutral-500 font-mono gap-4">
-          <p>© 2026 Aysha&apos;s Boutique. All rights reserved. Design & Fit curation by Owner Niyas and Des. Shifana.</p>
+          <p>© 2026 Aysha&apos;s Boutique. All rights reserved. Design &amp; Fit curation by Owner Niysnichu and Designer Shifana.</p>
           <div className="flex gap-4">
             <span>Server Version CJS-v2</span>
             <span>|</span>
