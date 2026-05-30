@@ -1,0 +1,6 @@
+{
+  "name": "Aysha's Boutique",
+  "description": "Premium women's clothing brand specializing in ethnic, western, formal, imported, and casual wear with worldwide shipping services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

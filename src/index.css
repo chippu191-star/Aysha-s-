@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-grotesk: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Custom luxury gold and warm champagne atelier colors */
+  --color-gold-50: #faf7f2;
+  --color-gold-100: #f3eae0;
+  --color-gold-200: #e5ceb6;
+  --color-gold-300: #d4ae8b;
+  --color-gold-400: #c18f62;
+  --color-gold-500: #b17544;
+  --color-gold-600: #9e5f35;
+  --color-gold-700: #834928;
+  --color-gold-800: #6b381f;
+  --color-gold-900: #512516;
+  
+  --color-atelier-dark: #1A1A1A;
+  --color-atelier-surface: #F1EFEA;
+  --color-atelier-neutral: #EBE9E2;
+  --color-atelier-clay: #2C2B28;
+  --color-atelier-champagne: #F8F7F4;
+  --color-atelier-gold: #8E8A7F;
+}
+
+/* Custom scrollbar and ambient design details */
+@layer base {
+  body {
+    background-color: var(--color-atelier-champagne);
+    color: var(--color-atelier-dark);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Luxury card-shimmers or focus effects */
+.luxury-shadow {
+  box-shadow: 0 10px 30px -10px rgba(26, 26, 26, 0.06);
+}
+.gold-shimmer {
+  background: linear-gradient(135deg, #8E8A7F 0%, #B4B0A7 50%, #8E8A7F 100%);
+}
