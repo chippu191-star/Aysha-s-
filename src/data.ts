@@ -181,6 +181,57 @@ export const CATALOG: Product[] = [
     ],
     stylingTips: "Accentuate with gold hoop earrings and neutral chunky leather sneakers or loafers.",
     fitNotes: "Highly forgiving knit weave that contours curves without compression. Magnificent on all shapes."
+  },
+  {
+    id: "cas-3",
+    name: "Gulhar Handloom Indigo Block-Print Co-ord Set",
+    category: "Casual",
+    fabric: "Premium 100% Handloom Jaipur Cotton",
+    price: 165,
+    description: "A Pinterest-trending bohemian double-cotton coordinate featuring a stunning hand-block printed indigo motif. Engineered with a relaxed notched-collar shirt-tunic and breezy tailored cigarette pants for supreme daylong elegance.",
+    image: "https://images.unsplash.com/photo-1608748010899-18f300247112?q=80&w=700&auto=format&fit=crop",
+    details: [
+      "Genuine vegetable-dyed Indigo block prints handcrafted by regional artisans",
+      "Relaxed drop-shoulder silhouette with elegant wooden coconut shell button closures",
+      "Tailored utility ankle pants finished with a subtle scalloped hem detail",
+      "Two functional deep side pockets for effortless utility"
+    ],
+    stylingTips: "Complements leather slide sandals, oversized canvas totes, and raw silver jewelry.",
+    fitNotes: "Breezy drape with adjustable back-elastic waistband. Beautifully fits rectangle, pear, and column shapes."
+  },
+  {
+    id: "cas-4",
+    name: "Aura Pastel Sage Linen Kurta-Set",
+    category: "Casual",
+    fabric: "Premium Belgian Linen [Rustic Slub]",
+    price: 190,
+    description: "The ultimate minimalist summer drape seen all over Pinterest. A soothing pastel sage green short kurta paired with signature fluid straight-leg bottoms, embellished with subtle organic ivory hand-threadwork embroidery.",
+    image: "https://images.unsplash.com/photo-1617019114583-affb34d1b3cd?q=80&w=700&auto=format&fit=crop",
+    details: [
+      "Breathable pure-spun flax fibers with a premium rustic slub texture",
+      "Aesthetic V-neck accented with delicate lace insertion panels",
+      "Straight relaxed bottoms with comfort elastication and flat-front waist",
+      "Finished with elegant side slit drapes for effortless walking mobility"
+    ],
+    stylingTips: "Style with pearl stud earrings and braided jute wedges for a clean organic design aesthetic.",
+    fitNotes: "Designed for a relaxed breathing room drape. Flattering for athletic, pear, and round silhouettes."
+  },
+  {
+    id: "cas-5",
+    name: "Zola Tiered Muslin Crop-Top & Skirt Set",
+    category: "Casual",
+    fabric: "Double-Weave Organic Cotton Muslin",
+    price: 175,
+    description: "Deeply inspired by Parisian countryside aesthetics trending on Pinterest. A breathable tiered coordinate comprising a tailored smocked crop top and a dynamic high-rise matching tiered maxi skirt with a majestic swaying silhouette.",
+    image: "https://images.unsplash.com/photo-1609187982841-184bc2471325?q=80&w=700&auto=format&fit=crop",
+    details: [
+      "Premium organic double-layered gauze muslin that softens with every wash",
+      "Form-adaptive smocked bodice ensuring secure slip-free support",
+      "Graceful multi-tiered gathered panel skirt ending in delicate lettuce edges",
+      "Fully lined with ultra-breathable soft cotton lawn fabric"
+    ],
+    stylingTips: "Accompany with a messy bun, golden dainty chain necklaces, and flat tan gladiators.",
+    fitNotes: "Smocked elastic stretch top and flexible skirt waistband accommodates multiple sizes easily."
   }
 ];
 
